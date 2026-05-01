@@ -18,6 +18,17 @@ A real-time incident management web application where teams can report, track, a
 - AI Assist: Summary, Next Actions, Priority Review
 - Status Workflow: Open → Investigating → Resolved
 
+## 📸 Screenshots
+
+### Dashboard
+![Dashboard](./public/screenshots/dashboard.png)
+
+### Report Incident Modal
+![Report Modal](./public/screenshots/report-modal.png)
+
+### Incident Details + AI Assistant
+![Incident Detail](./public/screenshots/incident-detail.png)
+
 ## Setup
 
 ```bash
