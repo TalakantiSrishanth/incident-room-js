@@ -66,16 +66,24 @@ Reporter: ${incident.reporter_name}
 Updates:
 ${updatesText}`,
 
-        next_actions: `You are an incident management assistant. Based on this incident, provide 4-6 specific, actionable next steps the team should take immediately.
+        next_actions:  `You are an incident response assistant.
+
+Give 4-6 short, actionable next steps.
+
+Rules:
+- Each step must be ONE concise sentence (max 12 words)
+- Start with a strong action verb
+- No explanations, no extra context
+- No bold text, no markdown
+- Keep it practical and execution-focused
+- Output ONLY a numbered list
 
 Incident: ${incident.title}
 Description: ${incident.description}
 Priority: ${incident.priority}
 Status: ${incident.status}
 Updates:
-${updatesText}
-
-Format as a numbered list.`,
+${updatesText}`,
 
         priority_review: `You are an incident management assistant. Review whether the current priority level (${incident.priority}) is appropriate for this incident. Provide a brief recommendation.
 
